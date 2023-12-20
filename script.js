@@ -7,6 +7,10 @@ let result = document.getElementById("result");
 
 //fn to calculate the age
 function calculateAge(){
+    if (!userInput.value) {  // if the user doesn't select any date then it will show an alert
+        alert('Please select a date');
+        return;
+    }
     let bday = new Date(userInput.value);   // bday will store the date of birth
 
     let d1 = bday.getDate(); // d1 will store the date
@@ -43,7 +47,6 @@ function calculateAge(){
     }
     //console.log(y3 + " years " + m3 + " months " + d3 + " days ");
     result.innerHTML = ` Your age is <span>${y3}</span> years <span>${m3}</span> months <span>${d3}</span> days`;
-
 }
 
 function getDaysInMonth(year, month) {
