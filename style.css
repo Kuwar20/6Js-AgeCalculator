@@ -91,3 +91,18 @@
     background-size: 30px;
     cursor: pointer;
 }
+
+#result {
+    margin-left: 10%;
+    /* 10% smaller from left side*/
+    margin-top: 0.5%;
+    /* 5% smaller from top side*/
+    margin-right: 40%;
+    /* 10% smaller from right side*/
+    padding: 35px;
+    align-items: center;
+}
+
+#result span {
+    color: #e3e313
+}
